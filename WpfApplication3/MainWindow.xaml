@@ -2,7 +2,10 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid x:Name="grid">
+        <Menu x:Name="Menu" IsMainMenu="True" Height="20" VerticalAlignment="Top">
+            <MenuItem Header="Afficher le clavier" Click="showKeyboard"/>
+            <MenuItem Header="Cacher le clavier" Click="hideKeyboard"/>
+        </Menu>
     </Grid>
 </Window>
